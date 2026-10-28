@@ -57,33 +57,33 @@
     .menu-btn { display: none; background: none; border: 1px solid var(--line); color: var(--text); border-radius: 10px; padding: 8px 11px; font-size: 1.1rem; }
     .hero { min-height: 690px; display: grid; align-items: center; padding: 74px 0 94px; position: relative; }
     .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: clamp(36px, 7vw, 92px); }
-    .status { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--line); border-radius: 99px; padding: 7px 12px; color: #c6d2df; font-size: .76rem; margin-bottom: 26px; background: rgba(255,255,255,.025); }
+    .status { display: inline-flex; align-items: center; gap: 9px; border: 1px solid var(--line); border-radius: 99px; padding: 7px 12px; color: #c6d2df; font-size: .76rem; margin-bottom: 26px; background: rgba(255,255,255,.02); }
     .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px rgba(216,255,98,.10); }
     h1 { font-size: clamp(3rem, 6.2vw, 5.8rem); line-height: 1.04; letter-spacing: -.075em; max-width: 760px; }
     h1 .highlight { color: var(--accent); display: inline-block; }
     .hero-copy { color: var(--muted); max-width: 620px; font-size: 1.02rem; margin: 25px 0 30px; }
     .hero-copy strong { color: #e6edf5; font-weight: 600; }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 10px; padding: 13px 19px; border-radius: 12px; font-size: .86rem; font-weight: 800; transition: transform .2s, background .2s; border: 1px solid transparent; cursor: pointer; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 10px; padding: 13px 19px; border-radius: 12px; font-size: .86rem; font-weight: 800; transition: transform .2s, border-color .2s, background .2s; }
     .btn:hover { transform: translateY(-3px); }
     .btn-primary { background: var(--accent); color: #10170a; }
-    .btn-secondary { border-color: var(--line); color: var(--text); background: rgba(255,255,255,.025); }
+    .btn-secondary { border: 1px solid var(--line); color: var(--text); background: rgba(255,255,255,.025); }
     .hero-meta { display: flex; gap: 23px; flex-wrap: wrap; margin-top: 37px; color: var(--muted); font-size: .78rem; }
     .hero-meta span { display: inline-flex; align-items: center; gap: 8px; }
     .hero-meta b { color: var(--text); font-weight: 700; }
     .portrait-wrap { position: relative; width: min(100%, 380px); justify-self: end; }
-    .portrait-frame { position: relative; aspect-ratio: 4 / 5; border-radius: 28px; overflow: hidden; border: 1px solid rgba(216,255,98,.36); background: #1b2735; box-shadow: 24px 24px 0 rgba(216,255,98,.055); }
+    .portrait-frame { position: relative; aspect-ratio: 4 / 5; border-radius: 28px; overflow: hidden; border: 1px solid rgba(216,255,98,.36); background: #1b2735; box-shadow: 24px 24px 0 rgba(216,255,98,.06); }
     .portrait-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(7,13,21,.58)); pointer-events: none; }
     .portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 24%; display: block; filter: saturate(.82); }
     .portrait-label { position: absolute; z-index: 2; bottom: 19px; left: 20px; right: 20px; display: flex; justify-content: space-between; gap: 10px; align-items: end; }
     .portrait-label strong { font-size: .95rem; display: block; }
     .portrait-label small { color: #d2dbe5; font-size: .72rem; }
-    .portrait-index { position: absolute; right: -20px; top: 28px; z-index: 3; background: var(--accent); color: #11170a; border-radius: 13px; padding: 12px 15px; font: 500 .72rem "DM Mono", monospace; transform: rotate(4deg); }
-    .orbit-note { position: absolute; left: -45px; bottom: 70px; z-index: 3; border: 1px solid var(--line); background: #111b29; border-radius: 14px; padding: 12px 15px; box-shadow: 0 12px 40px #05091066; }
+    .portrait-index { position: absolute; right: -20px; top: 28px; z-index: 3; background: var(--accent); color: #11170a; border-radius: 13px; padding: 12px 15px; font: 500 .72rem "DM Mono", monospace; }
+    .orbit-note { position: absolute; left: -45px; bottom: 70px; z-index: 3; border: 1px solid var(--line); background: #111b29; border-radius: 14px; padding: 12px 15px; box-shadow: 0 12px 40px rgba(0,0,0,.28); }
     .orbit-note strong { display: block; color: var(--accent); font-size: .83rem; }
     .orbit-note span { color: var(--muted); font-size: .69rem; }
     .ticker { border-block: 1px solid var(--line); background: rgba(255,255,255,.018); overflow: hidden; }
-    .ticker-track { display: flex; gap: 36px; justify-content: space-between; padding: 17px 0; white-space: nowrap; color: #b3c0ce; font: .74rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .12em; }
+    .ticker-track { display: flex; gap: 36px; justify-content: space-between; padding: 17px 0; white-space: nowrap; color: #b3c0ce; font: .74rem "DM Mono", monospace; text-transform: uppercase; letter-spacing: .14em; }
     .ticker-track span::before { content: "✳"; color: var(--accent); margin-right: 12px; }
     section.content-section { padding: 105px 0; }
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 40px; }
@@ -120,13 +120,13 @@
     .timeline-item p { color: var(--muted); font-size: .84rem; }
     .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .project { min-height: 235px; position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; padding: 27px; background: linear-gradient(145deg, #172639, #101925); }
-    .project::after { content: ""; position: absolute; width: 190px; height: 190px; border: 1px solid rgba(216,255,98,.12); border-radius: 50%; right: -70px; bottom: -90px; box-shadow: 0 0 0 22px rgba(216,255,98,.025), 0 0 0 44px rgba(216,255,98,.02); }
+    .project::after { content: ""; position: absolute; width: 190px; height: 190px; border: 1px solid rgba(216,255,98,.12); border-radius: 50%; right: -70px; bottom: -90px; box-shadow: 0 0 0 22px rgba(216,255,98,.025); }
     .project .project-no { color: var(--accent); font: .72rem "DM Mono", monospace; }
     .project h3 { margin: 26px 0 9px; font-size: 1.3rem; letter-spacing: -.04em; }
     .project p { max-width: 430px; color: var(--muted); font-size: .84rem; }
     .project .tags { position: relative; z-index: 1; }
     .project-note { color: var(--muted); font-size: .76rem; margin-top: 18px; }
-    .contact-panel { position: relative; overflow: hidden; padding: clamp(28px, 6vw, 65px); border-radius: 24px; border: 1px solid rgba(216,255,98,.25); background: radial-gradient(ellipse at 100% 0%, rgba(216,255,98,.12), transparent 40%), linear-gradient(135deg, #152235, #0f1927); }
+    .contact-panel { position: relative; overflow: hidden; padding: clamp(28px, 6vw, 65px); border-radius: 24px; border: 1px solid rgba(216,255,98,.25); background: radial-gradient(ellipse at 100% 0%, rgba(216,255,98,.09), transparent 34%), linear-gradient(135deg, #101d2c, #121b29 54%, #0d1722); }
     .contact-panel h2 { font-size: clamp(2.4rem, 5.5vw, 4.7rem); letter-spacing: -.075em; line-height: 1.08; max-width: 780px; margin: 15px 0 18px; }
     .contact-panel h2 span { color: var(--accent); }
     .contact-panel p { color: var(--muted); max-width: 570px; font-size: .9rem; margin-bottom: 25px; }
@@ -152,7 +152,7 @@
       .wrap { width: min(100% - 30px, var(--max)); }
       .nav { min-height: 67px; }
       .menu-btn { display: block; }
-      .navlinks { display: none; position: absolute; left: 15px; right: 15px; top: 74px; padding: 18px; flex-direction: column; align-items: stretch; gap: 14px; background: #111b29; border: 1px solid var(--line); border-radius: 15px; box-shadow: 0 20px 40px #0005; }
+      .navlinks { display: none; position: absolute; left: 15px; right: 15px; top: 74px; padding: 18px; flex-direction: column; align-items: stretch; gap: 14px; background: #111b29; border: 1px solid var(--line); border-radius: 16px; }
       .navlinks.open { display: flex; }
       .navlinks a { padding: 5px 2px; }
       .nav-cta { text-align: center; }
@@ -192,7 +192,7 @@
           <div class="status"><span class="pulse"></span> First-semester student · Open to learning</div>
           <p class="eyebrow">Student / Builder / Communicator</p>
           <h1>Curious mind.<br><span class="highlight">Useful skills.</span><br>Real impact.</h1>
-          <p class="hero-copy">Hey, I'm <strong>Syed Aga Wahdat Safvi</strong> — a student exploring the space where technology, communication, and creativity meet. I enjoy solving problems, learning fast, and turning ideas into practical digital experiences.</p>
+          <p class="hero-copy">Hey, I'm <strong>Syed Aga Wahdat Safvi</strong> — a student exploring the space where technology, communication, and creativity meet. I enjoy solving problems, learning by doing, and building skills that can help people and teams.</p>
           <div class="actions">
             <a class="btn btn-primary" href="#work">Explore my work <span>↘</span></a>
             <a class="btn btn-secondary" href="#contact">Get in touch <span>↗</span></a>
@@ -206,7 +206,7 @@
         <div class="portrait-wrap">
           <div class="portrait-index">PORTFOLIO / 2026</div>
           <div class="portrait-frame">
-            <img src="wahdat-profile.jpg" alt="Portrait of Syed Aga Wahdat Safvi">
+            <img src="photo glasses.jpeg" alt="Portrait of Syed Aga Wahdat Safvi">
             <div class="portrait-label"><div><strong>Syed Aga Wahdat Safvi</strong><small>Student · Lifelong learner</small></div><span>↗</span></div>
           </div>
           <div class="orbit-note"><strong>Always learning.</strong><span>One skill at a time.</span></div>
@@ -231,7 +231,7 @@
             <small>MY APPROACH · CURIOSITY OVER COMFORT</small>
           </div>
           <div class="panel about-text reveal">
-            <p>I'm a first-semester student who likes working with people just as much as exploring technology. My interests span customer support, communication, SQL, AI-powered tools, web development, and content for digital platforms.</p>
+            <p>I'm a first-semester student who likes working with people just as much as exploring technology. My interests span customer support, communication, SQL, AI-powered tools, web development, and digital creativity.</p>
             <p>I value clear communication, reliability, teamwork, and a willingness to learn. My goal is to keep building a versatile skill set, work on meaningful projects, and grow into opportunities where I can contribute and keep improving.</p>
             <div class="facts">
               <div class="fact"><small>FULL NAME</small><strong>Syed Aga Wahdat Safvi</strong></div>
@@ -251,12 +251,12 @@
           <p>A growing mix of technical, communication, and creative skills — with plenty more to learn.</p>
         </div>
         <div class="skills-grid">
-          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Web Development</h3><p>Learning to shape ideas into clear, responsive web pages and digital experiences.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript basics</span></div></article>
-          <article class="skill-card reveal"><div class="skill-icon">⌗</div><h3>SQL & Data</h3><p>Exploring how structured information can be organised, queried, and understood.</p><div class="tags"><span>SQL</span><span>Data thinking</span><span>Problem-solving</span></div></article>
-          <article class="skill-card reveal"><div class="skill-icon">✳</div><h3>AI Tools</h3><p>Using AI tools as learning and productivity aids to brainstorm, research, and work smarter.</p><div class="tags"><span>AI-assisted work</span><span>Research</span><span>Productivity</span></div></article>
-          <article class="skill-card reveal"><div class="skill-icon">↗</div><h3>Customer Support</h3><p>Focused on understanding a person's need, responding clearly, and finding helpful next steps.</p><div class="tags"><span>Listening</span><span>Solutions</span><span>Patience</span></div></article>
-          <article class="skill-card reveal"><div class="skill-icon">◎</div><h3>Communication</h3><p>Interested in sharing ideas clearly, collaborating with others, and building trust.</p><div class="tags"><span>Teamwork</span><span>Coordination</span><span>Clarity</span></div></article>
-          <article class="skill-card reveal"><div class="skill-icon">▧</div><h3>Content & Social Media</h3><p>Interested in digital storytelling, online communities, and engaging content.</p><div class="tags"><span>Content ideas</span><span>Social media</span><span>Creativity</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Web Development</h3><p>Learning to shape ideas into clear, responsive web pages and digital experiences.</p><div class="tags"><span>HTML</span><span>CSS</span><span>UI</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">⌗</div><h3>SQL & Data</h3><p>Exploring how structured information can be organised, queried, and understood.</p><div class="tags"><span>Queries</span><span>Databases</span><span>Logic</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">✳</div><h3>AI Tools</h3><p>Using AI tools as learning and productivity aids to brainstorm, research, and work smarter.</p><div class="tags"><span>Prompting</span><span>Research</span><span>Productivity</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">↗</div><h3>Customer Support</h3><p>Focused on understanding a person's need, responding clearly, and finding helpful next steps.</p><div class="tags"><span>Support</span><span>Listening</span><span>Problem-solving</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">◎</div><h3>Communication</h3><p>Interested in sharing ideas clearly, collaborating with others, and building trust.</p><div class="tags"><span>Clarity</span><span>Teamwork</span><span>Writing</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon">▧</div><h3>Content & Social Media</h3><p>Interested in digital storytelling, online communities, and engaging content.</p><div class="tags"><span>Storytelling</span><span>Branding</span><span>Engagement</span></div></article>
         </div>
       </div>
     </section>
@@ -268,9 +268,9 @@
           <p>Every project, conversation, and new concept is a chance to turn beginner knowledge into practical ability.</p>
         </div>
         <div class="timeline">
-          <article class="timeline-item reveal"><p class="eyebrow">NOW · ACADEMICS</p><h3>First-semester student</h3><p>Building a strong foundation, staying curious, and exploring the technology and communication skills that interest me.</p></article>
-          <article class="timeline-item reveal"><p class="eyebrow">IN PROGRESS · TECH</p><h3>Growing my digital toolkit</h3><p>Practising web development fundamentals, exploring SQL, and learning how AI tools can support research and productivity.</p></article>
-          <article class="timeline-item reveal"><p class="eyebrow">NEXT · GOAL</p><h3>Make skills useful in the real world</h3><p>Build more projects, learn from feedback, collaborate with others, and look for opportunities to contribute meaningfully.</p></article>
+          <article class="timeline-item reveal"><p class="eyebrow">NOW · ACADEMICS</p><h3>First-semester student</h3><p>Building a strong foundation, staying curious, and exploring the technologies, skills, and habits that matter most.</p></article>
+          <article class="timeline-item reveal"><p class="eyebrow">IN PROGRESS · TECH</p><h3>Growing my digital toolkit</h3><p>Practising web development fundamentals, exploring SQL, and learning how to use AI tools more effectively.</p></article>
+          <article class="timeline-item reveal"><p class="eyebrow">NEXT · GOAL</p><h3>Make skills useful in the real world</h3><p>Build more projects, learn from feedback, collaborate with others, and turn curiosity into action.</p></article>
         </div>
       </div>
     </section>
@@ -282,10 +282,10 @@
           <p>These are project directions that reflect my current interests. I'll keep adding finished work, demos, and links as they become available.</p>
         </div>
         <div class="project-grid">
-          <article class="project reveal"><span class="project-no">CONCEPT / 001</span><h3>Personal Portfolio</h3><p>A responsive personal website that introduces my skills, interests, and learning journey in one place.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive design</span></div></article>
-          <article class="project reveal"><span class="project-no">LEARNING / 002</span><h3>SQL Practice Lab</h3><p>A learning track focused on understanding tables, writing queries, and answering simple questions with data.</p><div class="tags"><span>SQL</span><span>Queries</span><span>Data basics</span></div></article>
-          <article class="project reveal"><span class="project-no">EXPLORATION / 003</span><h3>AI Productivity Workflow</h3><p>Experimenting with AI tools for research, organising ideas, drafting content, and improving everyday workflows.</p><div class="tags"><span>AI tools</span><span>Research</span><span>Productivity</span></div></article>
-          <article class="project reveal"><span class="project-no">CREATIVE / 004</span><h3>Content & Community</h3><p>Exploring social content ideas that communicate clearly, catch attention, and encourage meaningful interaction.</p><div class="tags"><span>Content</span><span>Communication</span><span>Social media</span></div></article>
+          <article class="project reveal"><span class="project-no">CONCEPT / 001</span><h3>Personal Portfolio</h3><p>A responsive personal website that introduces my skills, interests, and learning journey in a clean, professional way.</p><div class="tags"><span>Portfolio</span><span>Web design</span></div></article>
+          <article class="project reveal"><span class="project-no">LEARNING / 002</span><h3>SQL Practice Lab</h3><p>A learning track focused on understanding tables, writing queries, and answering practical data questions.</p><div class="tags"><span>SQL</span><span>Data</span></div></article>
+          <article class="project reveal"><span class="project-no">EXPLORATION / 003</span><h3>AI Productivity Workflow</h3><p>Experimenting with AI tools for research, organising ideas, drafting content, and working more efficiently.</p><div class="tags"><span>AI</span><span>Workflow</span></div></article>
+          <article class="project reveal"><span class="project-no">CREATIVE / 004</span><h3>Content & Community</h3><p>Exploring social content ideas that communicate clearly, catch attention, and build an online presence.</p><div class="tags"><span>Content</span><span>Branding</span></div></article>
         </div>
         <p class="project-note">Note: Project cards describe current learning directions, not claims of completed client work. Replace or update them as you build more.</p>
       </div>
@@ -297,15 +297,15 @@
           <p class="eyebrow">05 — Contact</p>
           <h2>Have an idea?<br><span>Let's talk.</span></h2>
           <p>I'm happy to connect about learning, collaboration, technology, content, or opportunities to grow and contribute.</p>
-          <div class="actions"><a class="btn btn-primary" href="mailto:swahdatsafvi@gmail.com?subject=Let's%20connect">Email me ↗</a><button class="btn btn-secondary" id="copyEmail" type="button">Copy email ⧉</button></div>
-          <div class="contact-bottom"><a class="email-link" href="mailto:swahdatsafvi@gmail.com">swahdatsafvi@gmail.com</a><span class="availability"><span class="pulse" style="display:inline-block;margin-right:9px"></span> OPEN TO LEARNING & COLLABORATION</span></div>
+          <div class="actions"><a class="btn btn-primary" href="mailto:swahdatsafvi@gmail.com?subject=Let's%20connect">Email me ↗</a><button class="btn btn-secondary" id="copyEmail" type="button">Copy email</button></div>
+          <div class="contact-bottom"><a class="email-link" href="mailto:swahdatsafvi@gmail.com">swahdatsafvi@gmail.com</a><span class="availability"><span class="pulse" style="display:inline-block"></span> Open to opportunities</span></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer><div class="wrap footer-inner"><span>© <span id="year"></span> Syed Aga Wahdat Safvi. Built with curiosity.</span><a class="back-top" href="#top">Back to top ↑</a></div></footer>
-  <div id="toast" role="status" aria-live="polite" style="position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--accent);color:#10170a;padding:10px 16px;border-radius:10px;font-size:.82rem;font-weight:800;transition:.25s;z-index:50">Email copied</div>
+  <div id="toast" role="status" aria-live="polite" style="position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--accent);color:#10170a;padding:10px 16px;border-radius:999px;font:700 .76rem 'DM Mono',monospace;box-shadow:0 10px 30px rgba(0,0,0,.24);transition:opacity .25s ease, transform .25s ease;"></div>
   <script>
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
